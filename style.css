@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B141C;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 1000;
+    
+}
+
+.logo h2 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0;
+    padding-left: 50px;
+}
+
+#dot {
+    color: orange;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 5px solid #3B141C;
+    background-color: #3B141C;
+    border-radius: 40px;
+    padding: 8px 16px;
+    text-align: center;
+    transition: 0.75s;
+}
+
+.links a:hover {
+    border: 5px solid chocolate;
+    background-color: chocolate;
+    transition: 0.2s;
+}
+
+
+
+/* Hero Section */
+.hero_section{
+   height: 87vh;
+   background-color: #3B141C;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 200px;
+}
+
+.text h2{
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    color: rgb(243, 150, 28);
+    padding-top: 9rem;
+    padding-left: 6.5rem;
+    font-size: 3.9rem;
+}
+
+.text h3{
+    color: white;
+    font-size: 2.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 100px;
+    
+}
+.text p{
+    color: white;
+    font-size: 1.4rem;
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+
+.image{
+    height: 600px;
+    width: 600px;
+    margin-top: 20px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.btn{
+    padding: 40px 100px;
+}
+.btn button{
+    font-family: 'Poppins, sans-serif';
+    font-size: 1.4rem;
+    padding: 13px 13px;
+    border-radius: 25px;
+    margin-left: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: 0.75s;
+    border: 3px solid white;
+    color: white;
+}
+.btn button:hover{
+    background-color: orange;
+    transition: 0.75s;
+    cursor: pointer;
+    border: 3px solid orange;
+    color: black;
+}
+#bt1{
+    background-color: orange;
+    border: none;
+    outline: none;
+    transition: 0.75s;
+    border: 3px solid orange;
+   color: black;
+}
+#bt1:hover{
+    background-color: transparent;
+    transition: 0.75s;
+    cursor: pointer;
+    border: 3px solid white;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    /* Tablet Adjustments */
+    .logo h2 {
+        font-size: 3rem;
+        padding: 10px 40px;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: #3B141C;
+        width: 220px;
+        border-radius: 10px;
+        padding: 15px 0;
+        z-index: 100;
+    }
+
+    .links a {
+        padding: 10px;
+        font-size: 1.1rem;
+        margin: 5px 0;
+        text-align: center;
+        border: none;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .navbar.open .links {
+        display: flex;
+    }
+    .hero_section{
+        height: 120vh;
+        gap: 10px;
+    }
+    .image{
+        height: 500px;
+        width: 500px;
+        margin-top: 20px;
+    }
+    .image img{
+        height: 100%;
+        width: 100%;
+         margin-left: 150px;
+    }
+    .text h2{
+        padding-top: 5rem;
+        font-size: 4.0rem;
+        text-align: center;
+
+    }
+    .text h3{
+        padding-top: 40px;
+        text-align: center;
+
+    }
+    .text p{
+        padding-top: 30px;
+        text-align: center;
+    }
+    .btn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+    #bt1{
+        margin-left: 50px;
+    }
+    .image{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile Adjustments */
+    .logo h2 {
+        font-size: 1.8rem;
+        padding: 10px 15px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background-color: #3B141C;
+        width: 180px;
+        border-radius: 10px;
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    .links a {
+        padding: 8px;
+        font-size: 1rem;
+        margin: 5px 0;
+        text-align: center;
+        border: none;
+    }
+
+    .navbar.open .links {
+        display: flex;
+    }
+    .hero_section{
+        height: 180vh;
+        gap: 0px;
+    }
+    .image{
+        height: 350px;
+        width: 350px;
+        margin-top: 0px;
+    }
+    .image img{
+        height: 100%;
+        width: 100%;
+         margin-left: 30px;
+    }
+    .text h2{
+        padding-top: 50px;
+        font-size: 4rem;
+       text-align: center;
+  margin-right: 0px;
+  padding-right: 68px;
+    }
+    .text h3{
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding-left: 10px;
+        
+    }
+    .text p{
+        font-size: 1.3rem;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+    
+    .btn{
+        margin-top: 30px;
+        padding: 2px;
+       margin-right: 50px;
+        gap: 30px;
+     font-size: 0.5rem;
+    }
+    #bt1{
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+    .hero_section{
+        gap: 0px;
+    }
+    .image{
+       margin-left: 0px;
+    }
+    
+
+}
